@@ -43,12 +43,14 @@ print("Area of the Circle: ",Area)
 print(students)"""
 
 # tuple 
- 
+ #it's also list but it is unmutable
+
+
 # none 
-# undefine
+# undefine    
 
 # dictionary
-"""student_1 = students[0]
+"""student_1 = students[0]78
 
 student_2 = students[1]
 
@@ -70,8 +72,13 @@ student_1 = {
 }"""""
 
 #task2
-"""test = ['hello', 'world', 'this', 'is', 'me']"""
-
+"""test = ['hello', 'world', 'this', 'is', 'me']
+test[0]="hey"
+test[1]="it's me Ali"
+test[2]="How Are you "
+test[3]="What's up"
+test[4]="Nice to meet you bro"
+print(test)"""
 #hint = [{'name': 'talha'}, ]
 
 # make a list of student objects
@@ -96,3 +103,6 @@ print(Student[2])
 print(Student[3])"""
 
 
+# for chnaging the value of the list 
+#suppose
+#student[1]="Talha " # it will shuffle the values 
