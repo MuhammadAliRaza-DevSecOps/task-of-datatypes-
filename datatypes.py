@@ -47,6 +47,7 @@ print(students)"""
 
 
 # none 
+test=None
 # undefine    
 
 # dictionary
@@ -106,3 +107,55 @@ print(Student[3])"""
 # for chnaging the value of the list 
 #suppose
 #student[1]="Talha " # it will shuffle the values 
+
+# List of object and access the values 
+"""
+Student=[
+    {"name":"Ali Raza" , "age":20 ,"Subject":"Python"},
+    {"name":"Usman" , "age":21,"Subject":"Python"},
+    {"name":"Uzair","age":21,"Subject":"C++","marks":[100,86,22]},
+    {"name":"Talha", "age":26,"Subject":"JavaScript"}
+]
+print(Student[2]["marks"][1])
+"""
+#tuple in python
+
+#student=("ali",20,"Osman","uzair")# immutable 
+
+#using list 
+student=["ali","osman","uzair"]
+print(student[1])
+#to add the value in list we use append keyword
+student.append("ahmad")
+#to remove last value we use pop
+#student.pop()
+#to pass  any value in the list we use keyword remove
+#student.remove(20)
+#to insert the value in the list 
+student.insert(1,20)
+#to add list in to the list 
+student=student+[1,2,3,4,5]
+print(student)
+#to extend or add we use keyword extend 
+student.extend([456,234,45,804])
+print(student)
+               #Slicing values in the list.
+#to print last value 
+print(student[-1])
+#to print the sequence from the list 
+print(student[0:3])
+#to print the middle value to last 
+print(student[2:-1])
+
+#create a new reversed list or reversed name that contain the element in reverse order using slicing and print it .
+names=["alice","bob","charlie","david"]
+#two method for reversing
+names.reverse()
+print(names[::-1])
+print(names)
+#multiple coln in the list 
+print(names[0:8:2])# it means first value print due to 0 and after it will cheeck in the 8 values in the list 
+#it will remove to number and then print the third value .
+#for reversing slicing 
+print(names[-1:5:-2])# -1 means it will start from the end and 5 means it will achive the value 5th and
+#-2 means it will remove every 2 element
