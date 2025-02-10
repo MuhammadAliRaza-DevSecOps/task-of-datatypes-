@@ -115,4 +115,87 @@ def factorial(n):
 result=factorial(3)
 print(result)
 """
+# return value  
+"""
+def greeting(input):
+    if "hello" in input:
+     return "Hey , How are you !"
+    else:
+       return "Bro It doesn't contain hello in the sentence"
     
+Greet=greeting("hello, computer !")
+print(Greet)
+       """
+
+# Side effect 
+"""
+emoticon="v.v" # it means sad 
+def main():
+    global emoticon # it means the out side emoticon is global and now it will access and also modify
+    #using global keyword 
+    say("Hey, there is someone ?")
+    emoticon=":D"
+    say("Oh hello") # here the say function is used for input or also to return the value .
+def say(phrase):
+    print(phrase +""+emoticon)
+
+main()
+"""
+# using string method 
+
+# for capitalizing the fist alphabet in the string 
+
+Shows=[
+    "Ali",
+           " Uzair ",
+        "    Osman",
+                  "  Saad",
+                "            Sajid"
+                
+]
+"""
+def main():
+    for show in Shows:
+        print(show.capitalize()) 
+main()
+"""
+#for captalizing 
+"""
+def main():
+    for show in Shows:
+        print(show.title())
+main()
+"""
+
+# for removing space
+"""
+def main():
+    for show in Shows:
+        print(show.strip())
+main()
+"""
+#for applying multiple method on list 
+"""
+def main():
+    for show in Shows:
+        print(show.strip().title())
+main()
+"""
+# For adding in to the new list 
+"""
+def main():
+    cleaned_show=[]
+    for show in Shows:
+         cleaned_show.append(show.strip().title())
+         print(cleaned_show)
+main()
+"""
+# for making a join 
+"""
+def main():
+    clean_show=[]
+    for show in Shows:
+        clean_show.append(show.strip().title())
+        print(" ".join(clean_show))
+main()
+"""
