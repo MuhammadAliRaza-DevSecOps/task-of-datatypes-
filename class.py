@@ -106,3 +106,13 @@ def suqare(n):
     return pow(n,2)# power of the value
 main()
 """
+# Recursion or Factorial
+""" 
+def factorial(n):
+    if n==1:
+        return 1
+    return n*factorial(n-1)
+result=factorial(3)
+print(result)
+"""
+    
