@@ -79,3 +79,16 @@ print("The amount of interest is :",Interest ,"$")
 """
 
 # 3- Write a program to Calculate a person's age in years ,month and  days given their birthdate.
+"""
+year = int(input("Enter your birth year: "))
+month = int(input("Enter your birth month: "))
+day = int(input("Enter your birth day: "))
+current_year = 2025
+current_month = 2
+current_day = 11
+years = current_year - year
+months = current_month - month
+days = current_day - day
+print("Your age is", years, "years,", months, "months, and", days, "days.")
+"""
+
