@@ -22,14 +22,14 @@ f_num=float(x)
 print("the value of string is ", x, "and the converted the string in to integer is ", integer, "and the string converted to float is ", f_num)
 """
 # 4. Check the datatype and mutability of given variables: a=10, b='Hello', c=3.14, etc
-
-
-
-
-
-
-
-
+"""
+a = 10
+b = 'Hello'
+c = 3.14
+print(type(a), "Immutable")
+print(type(b), "Immutable")
+print(type(c), "Immutable")
+"""
 #5- Create a dictionary with variable names as keys and values as different datatypes.
 """
 student={
