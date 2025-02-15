@@ -101,3 +101,12 @@ else:
 print(mark)
 """
 
+#input from  user and check wehter it is even or odd.
+"""
+num=int(input("Enter the number:"))
+if num%2==0:
+    print("number is even ")
+else:
+    print("Number is odd")
+print(num)
+"""

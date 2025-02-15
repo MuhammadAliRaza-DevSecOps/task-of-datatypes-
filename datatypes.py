@@ -178,7 +178,18 @@ print("Enter your age ",marks)
 """
 #for converting the input value into string to int or int to float deped on the input given by the user.
 #it is call typecasting 
+"""
 mark="45"
 mark_int=int(mark)
 print(mark_int)
 print(type(mark_int))
+"""
+#if and elif condition 
+temprature=45
+if temprature>45:
+    print("Temprature is too hot ")
+elif temprature<0:
+    print("Temprature is too cold")
+else:
+    print("temprature is normal")
+print("temprature is ",temprature)
