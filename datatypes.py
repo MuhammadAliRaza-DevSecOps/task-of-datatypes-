@@ -159,3 +159,26 @@ print(names[0:8:2])# it means first value print due to 0 and after it will cheec
 #for reversing slicing 
 print(names[-1:5:-2])# -1 means it will start from the end and 5 means it will achive the value 5th and
 #-2 means it will remove every 2 element
+
+#Indentation
+"""
+age=12
+if age>=18:
+    print("Eligibal for vote")
+print("Indentatoin ")# because it is out of the if body.
+"""
+#taking the value from user 
+"""
+age=12
+if age>=18:
+    print("Eligibal for vote")
+print("Indentatoin ")# because it is out of the if body.
+marks=input()
+print("Enter your age ",marks)
+"""
+#for converting the input value into string to int or int to float deped on the input given by the user.
+#it is call typecasting 
+mark="45"
+mark_int=int(mark)
+print(mark_int)
+print(type(mark_int))

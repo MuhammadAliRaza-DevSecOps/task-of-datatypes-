@@ -91,4 +91,13 @@ months = current_month - month
 days = current_day - day
 print("Your age is", years, "years,", months, "months, and", days, "days.")
 """
+#take a input from user and check whether it is positive or negative and print it
+"""
+mark=int(input("Enter Your number"))
+if mark>=0:
+    print("It is positive ")
+else:
+    print("Negative nnumber ")
+print(mark)
+"""
 
