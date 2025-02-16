@@ -123,41 +123,43 @@ print(Student[2]["marks"][1])
 #student=("ali",20,"Osman","uzair")# immutable 
 
 #using list 
+"""
 student=["ali","osman","uzair"]
-print(student[1])
+print(student[1])"""
 #to add the value in list we use append keyword
-student.append("ahmad")
+"""student.append("ahmad")"""
 #to remove last value we use pop
 #student.pop()
 #to pass  any value in the list we use keyword remove
 #student.remove(20)
 #to insert the value in the list 
-student.insert(1,20)
+"""student.insert(1,20)"""
 #to add list in to the list 
-student=student+[1,2,3,4,5]
-print(student)
+"""student=student+[1,2,3,4,5]
+print(student)"""
 #to extend or add we use keyword extend 
-student.extend([456,234,45,804])
-print(student)
+"""student.extend([456,234,45,804])
+print(student)"""
                #Slicing values in the list.
 #to print last value 
-print(student[-1])
+"""print(student[-1])"""
 #to print the sequence from the list 
-print(student[0:3])
+"""print(student[0:3])"""
 #to print the middle value to last 
+"""
 print(student[2:-1])
-
+"""
 #create a new reversed list or reversed name that contain the element in reverse order using slicing and print it .
-names=["alice","bob","charlie","david"]
+"""names=["alice","bob","charlie","david"]"""
 #two method for reversing
-names.reverse()
+"""names.reverse()
 print(names[::-1])
-print(names)
+print(names)"""
 #multiple coln in the list 
-print(names[0:8:2])# it means first value print due to 0 and after it will cheeck in the 8 values in the list 
+"""print(names[0:8:2])"""# it means first value print due to 0 and after it will cheeck in the 8 values in the list 
 #it will remove to number and then print the third value .
 #for reversing slicing 
-print(names[-1:5:-2])# -1 means it will start from the end and 5 means it will achive the value 5th and
+"""print(names[-1:5:-2])"""# -1 means it will start from the end and 5 means it will achive the value 5th and
 #-2 means it will remove every 2 element
 
 #Indentation
@@ -198,10 +200,39 @@ print("temprature is ",temprature)
 # function 
 "the code can easily used"
 #these are called dynamic function 
+"""
 def sum_dynamic_value(m,n):
     sum_reult=m+n
+"""
 
+# write a program that take a color as input and prints and action:
+"""
+color=str(input("Enter your Color name"))
+if color=="Red":
+    print("stop")
+elif color=="Yellow":
+    print("Get ready ")
+elif color=="Green":
+    print("Go")
+else:
+    print("Invalid color")
+"""
+#write a program that check whether a person is eligible for loan or not based on the following condition:
+#1- Age should be between 25 and 60 
+#2- Income should be greater than 50000
+#if both condition true print "Eligible for loan"
+#else print "Not Eligibal"
 
-print(sum_result)
-add_dynamic_value(1,2)
+age=int(input("Enter Your age "))
+Income=int(input("Enter income "))
 
+if age>=20 and age<=60 and Income>=50000:
+    print("Eligible for loan ")
+else:
+    print("Not eligible for loan ")
+
+# Pass is used for error handling
+"""
+if age<20:
+    pass
+"""
