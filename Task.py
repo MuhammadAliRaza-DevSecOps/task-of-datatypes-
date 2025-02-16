@@ -110,3 +110,39 @@ else:
     print("Number is odd")
 print(num)
 """
+# make a function 4
+"""
+def main():
+    
+    a =int(input("Enter yourn number "))
+    b = int(input("Enter Second Number"))
+
+    return [a, b]
+
+x, y = main()
+
+def add(m,n):
+    addition_value =m+n
+    print(addition_value)
+add(x, y)
+
+def Multiplication(m,n):
+       multiply_value=m*n
+       print(multiply_value)
+Multiplication(x,y)
+def division(m,n):
+       divide_value=m/n
+       print(divide_value)
+
+division(x,y)
+def Subtraction(m,n):
+       subtract_value=m-n
+       print(subtract_value)
+
+Subtraction(x,y)
+def remainder(m,n):
+       remainder_value=m%n
+       print(remainder_value)
+
+remainder(x,y)
+"""

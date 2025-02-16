@@ -185,6 +185,7 @@ print(mark_int)
 print(type(mark_int))
 """
 #if and elif condition 
+"""
 temprature=45
 if temprature>45:
     print("Temprature is too hot ")
@@ -193,3 +194,14 @@ elif temprature<0:
 else:
     print("temprature is normal")
 print("temprature is ",temprature)
+"""
+# function 
+"the code can easily used"
+#these are called dynamic function 
+def sum_dynamic_value(m,n):
+    sum_reult=m+n
+
+
+print(sum_result)
+add_dynamic_value(1,2)
+
