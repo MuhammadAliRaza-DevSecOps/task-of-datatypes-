@@ -286,3 +286,63 @@ match name:
     case _:     # This case _: Means that any name which is entered is not match 
         print("Who are you?")
 """
+# Distionary
+
+def main():
+    sapcecraft={"name":"ali", "Distance":"120"}
+    print(create_report(sapcecraft))
+    
+def create_report(sapcecraft):
+    return f"""
+    ==========Report==================
+    Name:{sapcecraft["name"]}
+    Distance:{sapcecraft["Distance"]}AU
+    ===================================
+"""
+main()
+
+# Second Method 
+def main():
+    sapcecraft={"name":"Sun"}
+    #it is used to add in to the dictonary
+    sapcecraft["Distance"]=100
+    sapcecraft.update({"location":"shahdara","University":"NCBA&E"}) 
+    # .update keyword is used to add multiple dictionary in it. 
+    print(create_report(sapcecraft))
+    
+def create_report(sapcecraft):
+    return f"""
+    ==========Report form ==================
+    Name:{sapcecraft["name"]}
+    Distance:{sapcecraft.get("Distance","Unknown")}AU   
+    ===================================
+"""
+# in this we can use .get for checking in to the dictionary.
+#either the value or not if not it will display another key which is unknown.
+main()
+ 
+ # use dictionary separate 
+"""distances={
+        "Ali":120,
+        "Osman":234,
+        "Ahmad":34      
+ }
+def main():
+       for Names in distances.keys():# it will return all the values of keys in dic.
+        print(f"{Names} is {distances[Names]} traveled")
+main()"""
+# use of keyword value 
+"""
+distances={
+        "Ali":120,
+        "Osman":234,
+        "Ahmad":34      
+ }
+def main():
+       for distance in distances.values():# it will return all the values of keys in dic.
+        print(f"{distances} AU is {convert(distance)} m")
+
+def convert(au):
+    return au*149597870700
+main()
+"""
