@@ -1,17 +1,21 @@
 #variables(value store) 
+"""
 x=45
 y=10
+"""
 # Arithmatic operators 
+"""
 sum_result=x+y
 subtract_result=x-y
 division_result=x/y
+"""
 # ** used for power 
 
 """print(sum_result)
 print(subtract_result)
 print(division_result)"""
 
-print(sum_result,subtract_result,division_result)#reults 
+"""print(sum_result,subtract_result,division_result)""" #reults 
 # ctrl+j (to open the terminal)
 # ctrl+? (to comment out)
 
@@ -27,11 +31,11 @@ print(sum_result,subtract_result,division_result)#reults
 # Difference between modulous (%) and Division (/)
  
  #division (is the qoutient in division.)
-division_result=x/y
-print(division_result) #result is 4.5  for checking  dividing the 45 by 10 qoutient is 4.5.
+"""division_result=x/y"""
+"""print(division_result)""" #result is 4.5  for checking  dividing the 45 by 10 qoutient is 4.5.
 #Modulous (is the remainder of the division it's the part of the division method.)
-modulous_result=x%y
-print(modulous_result) #result is 5 for checking 45 divided by 10 is remainder is 5 
+"""modulous_result=x%y"""
+"""print(modulous_result)""" #result is 5 for checking 45 divided by 10 is remainder is 5 
            # End in Nexskills 
 #=======================================================================================================================================
            #Start in Harvard University course python 
@@ -144,7 +148,7 @@ main()
 # using string method 
 
 # for capitalizing the fist alphabet in the string 
-
+"""
 Shows=[
     "Ali",
            " Uzair ",
@@ -154,7 +158,7 @@ Shows=[
                 
 ]
 """
-def main():
+"""def main():
     for show in Shows:
         print(show.capitalize()) 
 main()
@@ -200,28 +204,85 @@ def main():
 main()
 """
 # Recommendation:
-""" 
+"""
 def main():
     difficulty=input("Enter a Game do you like Casual or Difficulty ")
     player=input("Enter which you want to play like Single player or Multiplayer ")
     if difficulty=="Difficult":
         if player=="Single player":
-            print("Clock")
-        else:
-          print("PUBG")
-    elif difficulty=="Medium":
-        if player=="One player":
-            print("GTA")
-        else:
-            print("Chess")
-    else:
-        if player=="Single":
-            print("Heart")
-        else:
-            print("Free-Fire")
+            recommendation("Clock")
+        elif player=="Multiplayer":
+            recommendation("Snooker")
 
+        else:
+          recommendation("Enter valid number of player")
+    elif difficulty=="Casual":
+        if player=="Single player":
+            recommendation("GTA")
+        elif player=="Multiplayer":
+            recommendation("IGI")
+        else:
+            recommendation("Enter a valid number of player")
+    elif difficulty == "Medium":
+        if player=="Single player":
+            recommendation("Heart")
+        elif player=="Multiplayer":
+            recommendation("Free-Fire")
+        else:
+            recommendation("Enter a valid number od player")
+    else:
+        recommendation("Enter a valid difficulty")
 def recommendation(game):
     print("recomended game for you :D ", game)
 
 main()
+"""
+# Recommendation using not , or operator , return keyword :
+"""
+def main():
+    difficulty=input("Enter a Game do you like Casual or Difficulty ")
+    if not(difficulty=="Difficulty" or difficulty=="Medium" or difficulty=="casual"):
+        recommendation("Enter a valid difficulty")
+        return
+
+    player=input("Enter which you want to play like Single player or Multiplayer ")
+    if not(player=="Single player" or player=="Multiplayer"):
+        recommendation("Enter a valid number of player")
+        return
+
+    if difficulty=="Difficult" and player=="single player":
+            recommendation("Clock")
+    elif difficulty=="Difficulty" and  player=="Multiplayer":
+            recommendation("Snooker")
+    elif difficulty=="Casual" and player=="Single player":
+            recommendation("GTA")
+    elif difficulty=="casual" and player=="Multiplayer":
+            recommendation("IGI")
+    elif difficulty == "Medium" and player=="Single player":
+            recommendation("Heart")
+    elif difficulty=="Medium" and player=="Multiplayer":
+            recommendation("Free-Fire")
+    else:
+        recommendation("Solitaire")
+def recommendation(game):
+    print("recomended game for you :D ", game)
+
+main()
+"""
+# use of match and case keyword 
+"""
+name=str(input("Enter Your name"))
+match name:
+    case "Ali":
+        print("Shahdara")
+    case "Osman"|"Zain":#in this the location is same of Osman and zain in one line using|
+        print("Lahore")
+    case "Uzair":
+        print("Chabourji")
+    case "Ali Ejaz":
+        print("Lahore")
+    case "saad":
+       print("lahore")
+    case _:     # This case _: Means that any name which is entered is not match 
+        print("Who are you?")
 """
