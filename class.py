@@ -199,3 +199,28 @@ def main():
         print(" ".join(clean_show))
 main()
 """
+# Recommendation:
+ 
+def main():
+    difficulty=input("Enter a Game do you like Casual or Difficulty ")
+    player=input("Enter which you want to play like Single player or Multiplayer ")
+    if difficulty=="Difficult":
+        if player=="Single player":
+            print("Clock")
+        else:
+          print("PUBG")
+    elif difficulty=="Medium":
+        if player=="One player":
+            print("GTA")
+        else:
+            print("Chess")
+    else:
+        if player=="Single":
+            print("Heart")
+        else:
+            print("Free-Fire")
+
+def recommendation(game):
+    print("recomended game for you :D ", game)
+
+main()
