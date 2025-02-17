@@ -47,7 +47,7 @@ print(students)"""
 
 
 # none 
-test=None
+"""test=None"""
 # undefine    
 
 # dictionary
@@ -222,7 +222,7 @@ else:
 #2- Income should be greater than 50000
 #if both condition true print "Eligible for loan"
 #else print "Not Eligibal"
-
+"""
 age=int(input("Enter Your age "))
 Income=int(input("Enter income "))
 
@@ -230,7 +230,7 @@ if age>=20 and age<=60 and Income>=50000:
     print("Eligible for loan ")
 else:
     print("Not eligible for loan ")
-
+"""
 # Pass is used for error handling
 """
 if age<20:

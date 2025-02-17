@@ -43,6 +43,7 @@ for num in range(1, 6):
     print(num)
 """
 # game to guess the value 
+"""
 import random 
 secret_number=random.randint(1,10)
 guess=0
@@ -54,6 +55,6 @@ while not(guess== secret_number):
         print("The number is to high")
     else:
         print("Correct")
-
+"""
 #OOP
 #four pilers of OOP 
