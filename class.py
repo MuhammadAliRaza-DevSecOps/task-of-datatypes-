@@ -200,7 +200,7 @@ def main():
 main()
 """
 # Recommendation:
- 
+""" 
 def main():
     difficulty=input("Enter a Game do you like Casual or Difficulty ")
     player=input("Enter which you want to play like Single player or Multiplayer ")
@@ -224,3 +224,4 @@ def recommendation(game):
     print("recomended game for you :D ", game)
 
 main()
+"""
